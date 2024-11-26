@@ -13,5 +13,10 @@
         <input type="submit" value="login">
 
     </form>
+    <% if (errorMessage) {%>
+    <p style="color: red; font-size: medium; text-decoration: dashed;"> 
+        <%= errorMessage %>
+    </p>
+    <% }%>
 </body>
 </html>
